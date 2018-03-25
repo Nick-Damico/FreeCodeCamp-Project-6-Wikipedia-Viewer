@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Nick-Damico/FreeCodeCamp-Project-6-Wikipedia-Viewer/issues"
   },
-  "homepage": "https://github.com/Nick-Damico/FreeCodeCamp-Project-6-Wikipedia-Viewer#readme"
+  "homepage": "https://github.com/Nick-Damico/FreeCodeCamp-Project-6-Wikipedia-Viewer#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
