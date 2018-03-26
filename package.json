@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Nick-Damico/FreeCodeCamp-Project-6-Wikipedia-Viewer#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
   }
 }
