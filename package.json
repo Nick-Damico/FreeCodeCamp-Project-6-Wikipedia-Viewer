@@ -1,7 +1,7 @@
 {
-  "name": "wikipedia_viewer",
+  "name": "freecodecamp-project-6-wikipedia-viewer",
   "version": "1.0.0",
-  "description": "wikipedia app freeCodeCamp proj",
+  "description": "FreeCodeCamp Proj 6 Front-End Dev",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,17 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Nick-Damico/FreeCodeCamp-Project-6-Wikipedia-Viewer.git"
   },
-  "keywords": [
-    "gulp",
-    "freecodecamp",
-    "jasmine",
-    "wikipedia",
-    "web",
-    "application",
-    "responsive",
-    "design"
-  ],
-  "author": "Nicholas Damcio nickalan82@icloud.com",
+  "author": "Nicholas Damico nickalan82@icloud.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Nick-Damico/FreeCodeCamp-Project-6-Wikipedia-Viewer/issues"
