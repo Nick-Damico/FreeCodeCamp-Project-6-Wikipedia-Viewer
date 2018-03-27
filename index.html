@@ -7,6 +7,9 @@
 
   <link rel="shortcut icon" type="image/png" href="js/lib/jasmine/lib/jasmine-3.1.0/jasmine_favicon.png">
   <link rel="stylesheet" type="text/css" href="js/lib/jasmine/lib/jasmine-3.1.0/jasmine.css">
+  <!--build:css css/styles.min.css-->
+      <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
 </head>
 <body>
 
@@ -24,9 +27,11 @@
   <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/boot.js"></script>
 
   <!-- application files -->
+  <!--build:js js/main.min.js -->
   <script src="js/src/WikipediaViewer.js"></script>
   <script src="js/src/WikiArticle.js"></script>
   <script src="js/src/app.js"></script>
+  <!-- endbuild -->
 
   <!-- spec testing files -->
   <script src="js/spec/UiSpec.js"></script>
