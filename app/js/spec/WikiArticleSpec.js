@@ -1,5 +1,3 @@
-
-
 describe('Wiki Article', function() {
 
   const article_1 = {
