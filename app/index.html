@@ -7,6 +7,7 @@
 
   <link rel="shortcut icon" type="image/png" href="js/lib/jasmine/lib/jasmine-3.1.0/jasmine_favicon.png">
   <link rel="stylesheet" type="text/css" href="js/lib/jasmine/lib/jasmine-3.1.0/jasmine.css">
+
   <!--build:css css/styles.min.css-->
       <link rel="stylesheet" href="css/styles.css">
   <!--endbuild-->
@@ -15,18 +16,18 @@
 
   <h1 class="main__title">Wikipedia Viewer App</h1>
 
+  <form id="search" action="" method="GET">
+    <input id="search__input" type="text" placeholder="Search Wikipedia" />
+    <button id="search__btn" type="submit">Search</button>
+  </form>
 
-
-
-
-  <!-- JavaScript Files BELOW -->
 
   <!-- jasmine testing scripts -->
+  <!-- Remove for deployment -->
   <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/jasmine.js"></script>
   <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/jasmine-html.js"></script>
   <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/boot.js"></script>
 
-  <!-- application files -->
   <!--build:js js/main.min.js -->
   <script src="js/src/WikipediaViewer.js"></script>
   <script src="js/src/WikiArticle.js"></script>
@@ -34,6 +35,7 @@
   <!-- endbuild -->
 
   <!-- spec testing files -->
+  <!-- Remove for deployment -->
   <script src="js/spec/UiSpec.js"></script>
   <script src="js/spec/WikipediaSpec.js"></script>
   <script src="js/spec/WikiArticleSpec.js"></script>
