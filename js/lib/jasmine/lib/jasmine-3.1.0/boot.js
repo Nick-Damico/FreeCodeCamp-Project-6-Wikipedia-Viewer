@@ -59,9 +59,7 @@
 
   var random = queryString.getParam("random");
 
-  if (random !== undefined && random !== "") {
-    env.randomizeTests(random);
-  }
+  env.randomizeTests(false);
 
   var seed = queryString.getParam("seed");
   if (seed) {
