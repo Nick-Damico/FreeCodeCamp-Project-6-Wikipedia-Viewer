@@ -60,6 +60,6 @@ describe('Wiki Article Summary', function() {
   it('is formatted for output with html markup removed', function() {
     const wikiArticle = new WikiArticle(article_1);
 
-    expect(wikiArticle.formatSummary()).toEqual("Critical Role is an American web series produced by Geek & Sundry in which a group of professional voice actors play Dungeons & Dragons. The series is");
+    expect(wikiArticle.formatSummary()).toEqual("Critical Role is an American web series produced by Geek & Sundry in which a group of professional voice actors play Dungeons & Dragons. The series is...");
   });
 });
