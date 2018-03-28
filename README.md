@@ -6,7 +6,7 @@ an attractive layout.
 
 ## Project Requirements
 Build a Web App that fufills the below User Stories:
-- [ ] I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.
+- [X] I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.
 - [ ] I can click a button to see a random Wikipedia entry.
 
 ## About
