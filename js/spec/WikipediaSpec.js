@@ -28,6 +28,6 @@ describe('Wikipedia Viewer', function() {
 
     expect(wikipediaViewer.baseUrl).toBeDefined();
     expect(wikipediaViewer.baseUrl).toEqual(WIKI_URL);
-  })
+  });
 
 });
