@@ -19,5 +19,5 @@ WikiArticle.prototype.formatSummary = function() {
   // Remove HTML markup from string
   formattedSummary = formattedSummary.replace(/(<span|<\/span>|class="\w*"|>)/g, '');
   // Remove any 'double' whitespaces and trim whitepaces from ends of string, then return
-  return formattedSummary.replace("  ", " ").trim();
+  return formattedSummary.replace("  ", " ").trim() + '...';
 };
