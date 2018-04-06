@@ -1,7 +1,2 @@
-body {
-  background-color: black;
-}
-
-h1 {
-  color: tomato;
-}
+@import 'variables/index';
+@import 'components/index';
