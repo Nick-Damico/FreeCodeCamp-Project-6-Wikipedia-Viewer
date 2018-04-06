@@ -1,0 +1,19 @@
+.header {
+  background-color: $header_bg--2;
+  background: linear-gradient(135deg,$header_bg--1 35%, $header_bg--2);
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+
+  .header__link {
+    margin-left: auto;
+  }
+
+  .header__title {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 102px;
+    text-align: center;
+  }
+}
