@@ -1,4 +1,4 @@
-const API_RANDOM_URL = 'https://en.wikipedia.org/wiki/Special:Random';
+const API_RANDOM_URL = 'http://en.wikipedia.org/w/api.php?action=query&origin=*&generator=random&grnnamespace=0&prop=extracts&exchars=200&format=json';
 const API_QUERY_URL = 'https://en.wikipedia.org/w/api.php?action=query&origin=*&prop=info&inprop=url&utf8=&format=json&list=search&srsearch=';
 const WIKI_URL = 'https://en.wikipedia.org/?curid=';
 
@@ -37,3 +37,20 @@ WikipediaViewer.prototype.getArticles = function(term) {
     self.displayArticles();
   })
 };
+
+WikipediaViewer.prototype.getRandom = function() {
+  const self = this;
+  self.articles = [];
+  fetch(this.apiUrlRandom)
+  .then(res => res.json())
+  .catch(e => console.error(e))
+  .then(json => {
+    let page = json.query.pages;
+    let key = Object.keys(page)[0];
+    page = page[key];
+    let newObj = Object.assign({}, {title: page.title, snippet: page.extract, pageid: page.pageid});
+    let newArticle = new WikiArticle(newObj);
+    self.articles.push( newArticle );
+    self.displayArticles();
+  })
+}
