@@ -1,0 +1,31 @@
+.article-section {
+  width: 100%;
+  /* background: #f4f3f9; */
+  position: relative;
+  margin: -45px auto 0;
+  z-index: 2;
+  
+  .article {
+      border: 4px solid #8060c8;
+      background: -webkit-linear-gradient(bottom left, $search__bg-color--1, $search__bg-color--2);
+      background: -o-linear-gradient(bottom left, $search__bg-color--1, $search__bg-color--2);
+      background: linear-gradient(to top right, $search__bg-color--1, $search__bg-color--2);
+      font-family: $nunito__font;
+      padding-left: 8px;
+      margin-bottom: 6px;
+    }
+  .article__title {
+    color: $white;
+    margin-top: 4px;
+    margin-bottom: 0;
+
+    & > a {
+      color: $white;
+    }
+  }
+
+  .article__text {
+    color: $white;
+    margin-top: 4px;
+  }
+}

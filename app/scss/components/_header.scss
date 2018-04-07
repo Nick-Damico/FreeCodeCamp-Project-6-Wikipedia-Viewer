@@ -1,18 +1,43 @@
 .header {
   background-color: $header_bg--2;
-  background: linear-gradient(135deg,$header_bg--1 35%, $header_bg--2);
+  background: -webkit-linear-gradient(top left, $header_bg--1 35%, $header_bg--2);
+  background: -o-linear-gradient(top left, $header_bg--1 35%, $header_bg--2);
+  background: linear-gradient(to bottom right, $header_bg--1 35%, $header_bg--2);
   color: $white;
   display: flex;
   flex-direction: column;
-  height: 75vh;
+  font-family: $header__font-family;
+  height: 85vh;
+  text-align: center;
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 39px;
+    bottom: -21px;
+    left: -3;
+    background: white;
+    transform: rotate(4deg);
+    width: 103%;
+    z-index: 1;
+  }
 
   .header__link {
+    background: cadetblue;
+    color: $white;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 200;
     margin-left: auto;
+    padding: 5px;
   }
 
   .header__title {
-    font-size: 2rem;
-    font-weight: 100;
+    font-size: 2.8rem;
+    font-weight: 600;
     margin-top: 102px;
     text-align: center;
   }

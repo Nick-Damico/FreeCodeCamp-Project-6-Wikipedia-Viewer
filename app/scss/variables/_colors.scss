@@ -1,12 +1,22 @@
 $dark_purple:        #8a7ad7;
 $light_purple:       #7239ad;
-$lavander:           #9a74c9;
-$sunset:             #d26b7f;
+$sunset:             #9a74c9;
+$lavander:           #d26b7f;
+$skyblue:            #5983D5;
 $white:              #F4F4F4;
+$light_gray:         #3D4141;
 
 $header_bg--1:       $dark_purple;
 $header_bg--2:       $light_purple;
 
+$input_placeholder:  $light_gray;
+$input_color:        $light_gray;
+
 $article_bg--1:      $lavander;
 $article_bg--2:      $sunset;
 $article_border:     $dark_purple;
+
+$search__btn-color:  $white;
+$search__btn-border-color: $skyblue;
+$search__bg-color--1: $lavander;
+$search__bg-color--2: $sunset;
