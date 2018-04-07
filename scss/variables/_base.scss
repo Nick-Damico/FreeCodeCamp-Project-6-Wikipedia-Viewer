@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  border-top: 8px solid cadetblue;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 18px);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1 auto;
+}

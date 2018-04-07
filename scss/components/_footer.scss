@@ -1,0 +1,12 @@
+.footer {
+  background-color: $white;
+  color: $light_gray;
+  font-family: $nunito__font;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+
+  .heart__icon {
+    color: tomato;
+  }
+}
