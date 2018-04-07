@@ -9,27 +9,49 @@
   <link rel="stylesheet" type="text/css" href="js/lib/jasmine/lib/jasmine-3.1.0/jasmine.css">
 
   <!--build:css css/styles.min.css-->
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,400,600" rel="stylesheet">
       <link rel="stylesheet" href="css/styles.css">
   <!--endbuild-->
 </head>
 <body>
 
-  <h1 class="main__title">Wikipedia Viewer App</h1>
+  <header class="header">
+    <div class="wrapper">
 
-  <form id="search" action="" method="GET">
-    <input id="search__input" type="text" placeholder="Search Wikipedia" />
-    <button id="search__btn" type="submit">Search</button>
-  </form>
+      <a class="header__link" alt="#">about</a>
+      <h1 class="header__title">Wiki Viewer</h1>
 
-  <section id="article_container">
-  </section>
+      <form id="search" action="" method="GET">
+        <input id="search__input" class="search__input" type="text" placeholder="Search Wikipedia" />
+        <div class="search__inner--btn-container">
+          <button id="search__btn" class="search__btn" type="submit">feeling lucky?</button>
+          <button id="search__btn" class="search__btn" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+  </header>
 
+  <main class="wrapper main">
+    <section id="article_container" class="article-section">
+      <!-- <div class="article">
+        <h2 class="article__title">Article Title</h2>
+        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Praesentium ducimus consectetur magnam, eius beatae officia unde veniam
+          optio dignissimos dolores molestiae tempore!
+        </p>
+      </div> -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; 2018. Made with <span class="heart__icon">&#9829;</span> NicholasDamico.net</small>
+  </footer>
 
   <!-- jasmine testing scripts -->
   <!-- Remove for deployment -->
-  <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/jasmine.js"></script>
+  <!-- <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/jasmine.js"></script>
   <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/jasmine-html.js"></script>
-  <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/boot.js"></script>
+  <script type="text/javascript" src="js/lib/jasmine/lib/jasmine-3.1.0/boot.js"></script> -->
 
   <!--build:js js/main.min.js -->
   <script src="js/src/WikipediaViewer.js"></script>
@@ -39,8 +61,8 @@
 
   <!-- spec testing files -->
   <!-- Remove for deployment -->
-  <script src="js/spec/UiSpec.js"></script>
+  <!-- <script src="js/spec/UiSpec.js"></script>
   <script src="js/spec/WikipediaSpec.js"></script>
-  <script src="js/spec/WikiArticleSpec.js"></script>
+  <script src="js/spec/WikiArticleSpec.js"></script> -->
 </body>
 </html>
