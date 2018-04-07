@@ -7,7 +7,7 @@ an attractive layout.
 ## Project Requirements
 Build a Web App that fufills the below User Stories:
 - [X] I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.
-- [ ] I can click a button to see a random Wikipedia entry.
+- [X] I can click a button to see a random Wikipedia entry.
 
 ## About
 Unit Testing implemented using Jasmine Testing Framework.
