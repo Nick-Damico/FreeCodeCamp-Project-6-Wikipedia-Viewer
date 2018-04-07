@@ -20,7 +20,7 @@
     height: 39px;
     bottom: -21px;
     left: -3;
-    background: white;
+    background: $white;
     transform: rotate(4deg);
     width: 103%;
     z-index: 1;
@@ -30,6 +30,11 @@
     &::after {
       height: 40px;
     }
+  @media screen and (min-width: 800px) {
+    &::after {
+      display: none;
+    }
+  }
   }
 
   @media screen and (min-width: 600px) {
