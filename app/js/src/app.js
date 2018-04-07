@@ -14,5 +14,18 @@
     WikiViewer.getArticles(term);
   });
 
+  function backToTopBtn() {
+    const backTopBtn = document.querySelector('#backToTopbtn');
+    console.log(backTopBtn);
+    console.log(window.pageYOffset);
+    if (pageYOffset > 360) {
+      backTopBtn.setAttribute('class', 'back__btn--on');
+    } else if (backTopBtn.getAttribute('class') === 'back__btn--on') {
+      backTopBtn.removeAttribute('class', 'back__btn--on');
+    }
+  }
+
+  window.addEventListener('scroll', backToTopBtn);
+
 
 })();
