@@ -13,9 +13,9 @@ WikipediaViewer.prototype.displayArticles = function() {
   let htmlArticles;
   let articleContainer = document.getElementById('article_container');
   for( let article of this.articles ){
-    htmlArticles += '<div>';
-      htmlArticles += `<h2><a target="_blank" href="${this.baseUrl + article.pageid}">${article.title}</a></h2>`;
-      htmlArticles += `<p>${article.formatSummary()}</p>`;
+    htmlArticles += '<div class="article">';
+      htmlArticles += `<h2 class="article__title"><a target="_blank" href="${this.baseUrl + article.pageid}">${article.title}</a></h2>`;
+      htmlArticles += `<p class="article__text">${article.formatSummary()}</p>`;
     htmlArticles += '</div>';
   }
   // Remove a string of "undefined" that is in this html string? Not sure whats causing it.
