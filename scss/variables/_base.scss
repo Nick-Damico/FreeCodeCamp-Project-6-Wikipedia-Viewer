@@ -8,6 +8,24 @@ body {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 18px);
+  position: relative;
+
+  .back__btn--on::after {
+    content: "\21E7";
+    display: block;
+    background: #2cc1a9;
+    border-radius: 50%;
+    box-shadow: 1px 2px 1px 1px #616f6e;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 3;
+  }
 }
 
 .wrapper {
