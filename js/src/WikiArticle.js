@@ -1,13 +1,17 @@
 let idCount = 0;
 
-function WikiArticle(obj=null) {
+function WikiArticle(obj = null) {
   idCount += 1;
   this.id = idCount;
   if (obj) {
-      const{ title, pageid, snippet } = obj;
-      this.summary = snippet;
-      this.title = title;
-      this.pageid = pageid;
+    const {
+      title,
+      pageid,
+      snippet
+    } = obj;
+    this.summary = snippet;
+    this.title = title;
+    this.pageid = pageid;
   }
 }
 

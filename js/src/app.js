@@ -1,5 +1,5 @@
 // iffe function call
-(function IIFE(){
+(function IIFE() {
   // Instantiate Wikipedia Viewer Object.
   const WikiViewer = new WikipediaViewer();
   const searchForm = document.getElementById('search');
@@ -21,12 +21,8 @@
     WikiViewer.getRandom();
   });
 
-
-
   function backToTopBtn() {
     const backTopBtn = document.querySelector('#backToTopbtn');
-    console.log(backTopBtn);
-    console.log(window.pageYOffset);
     if (pageYOffset > 360) {
       backTopBtn.setAttribute('class', 'back__btn--on');
     } else if (backTopBtn.getAttribute('class') === 'back__btn--on') {
@@ -35,6 +31,5 @@
   }
 
   window.addEventListener('scroll', backToTopBtn);
-
 
 })();
