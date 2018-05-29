@@ -23,7 +23,7 @@
 
   function backToTopBtn() {
     const backTopBtn = document.querySelector('#backToTopbtn');
-    if (pageYOffset > 360) {
+    if (window.pageYOffset > 360) {
       backTopBtn.setAttribute('class', 'back__btn--on');
     } else if (backTopBtn.getAttribute('class') === 'back__btn--on') {
       backTopBtn.removeAttribute('class', 'back__btn--on');
